@@ -1,0 +1,10 @@
+table,rows,columns,columns_with_nulls,distinct_key_values,duplicate_key_rows
+customers,99441,5,0,99441.0,0.0
+orders,99441,8,3,99441.0,0.0
+order_items,112650,7,0,,
+payments,103886,5,0,,
+reviews,99224,7,2,98410.0,814.0
+products,32951,9,8,32951.0,0.0
+sellers,3095,4,0,3095.0,0.0
+geolocation,1000163,5,0,,
+category_translation,71,2,0,71.0,0.0
