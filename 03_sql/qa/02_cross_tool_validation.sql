@@ -1,0 +1,13 @@
+-- Cross-tool validation summary
+-- All six business questions were computed independently in pandas (Python)
+-- and SQL. Four matched exactly; two SQL versions corrected a pandas
+-- methodology error (denominator handling), documented in decisions_log.md.
+--
+-- Q1 revenue concentration: SQL corrected pandas (62.4% not 63.2%) —
+--   pandas dropped NULL-category rows from its denominator by default
+-- Q2 delivery vs. satisfaction: exact match
+-- Q3 repeat purchase rate: exact match
+-- Q4 seller concentration: exact match
+-- Q5 freight cost ratio: SQL corrected pandas (16.6% not 22.6%) —
+--   naive column-sum ratio vs. category-weighted calculation
+-- Q6 late delivery by geography: exact match
